@@ -1,0 +1,25 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Demo Angular PWA",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://dotnet-angular-pwa.azurewebsites.net/",
+  "short_name": "DotnetAngularPw",
+  "theme_color": "transparent",
+  "description": "Demonstration Angular-based PWA",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://dotnet-angular-pwa.azurewebsites.net/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64"
+    },
+    {
+      "src": "https://dotnet-angular-pwa.azurewebsites.net/favicon.ico",
+      "sizes": "16x16 32x32 48x48 64x64"
+    }
+  ]
+}
