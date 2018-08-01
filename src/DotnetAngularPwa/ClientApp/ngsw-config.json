@@ -1,0 +1,56 @@
+{
+  "index": "/",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/"
+        ],
+        "versionedFiles": [
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**"
+        ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "forecasts",
+      "urls": [
+        "/api/SampleData/WeatherForecasts"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "timeout": "3s",
+        "maxAge": "5h",
+        "maxSize": 1000
+      }
+    },
+    {
+      "name": "currentWeather",
+      "urls": [
+        "/api/SampleData/CurrentWeather"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "timeout": "3s",
+        "maxAge": "30s",
+        "maxSize": 1000
+      }
+    }
+  ]
+}
