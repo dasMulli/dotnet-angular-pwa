@@ -21,7 +21,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     FetchDataComponent
   ],
   imports: [
-    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js', { scope: "/" }) : [],
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,

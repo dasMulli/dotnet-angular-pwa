@@ -26,5 +26,31 @@
         ]
       }
     }
+  ],
+  "dataGroups": [
+    {
+      "name": "forecasts",
+      "urls": [
+        "/api/SampleData/WeatherForecasts"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "timeout": "3s",
+        "maxAge": "5h",
+        "maxSize": 1000
+      }
+    },
+    {
+      "name": "currentWeather",
+      "urls": [
+        "/api/SampleData/CurrentWeather"
+      ],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "timeout": "3s",
+        "maxAge": "30s",
+        "maxSize": 1000
+      }
+    }
   ]
 }
